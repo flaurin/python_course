@@ -74,7 +74,7 @@ def categorize_unemployment(unemployment):
         return "medel"
     if unemployment > 7:
         return "hög"
-
+"""liten ändring"""
     
 for row in data:
     """print row["municipality"], row["unemployment_2014"]"""
