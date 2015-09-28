@@ -1,35 +1,33 @@
 # -*- coding: utf-8 -*-
 
-""" ÖVNING:
-    Lös uppgifterna neden genom att hämta rätt värden ur följande två dictionaries.
-    Skriv ut svaren med print().
-
-    Exempel: pop_sthlm["kommun"] ger antalet invånare i Stockholms kommun.
+""" ÖVNING
 """
 
-pop_sthlm = {
-    "tätort": 1372565.0,
-    "kommun": 914909.0,
-    "storstadsområde": 2205105.0
+stockholm = {
+    'unemployment_2009': 4.0,
+    'unemployment_2014': 5.1
 }
-pop_gbg = {
-    "tätort": 549839.0,
-    "kommun": 543005.0,
-    "storstadsområde": 973261.0
+
+solna = {
+    'unemployment_2009': 2.7,
+    'unemployment_2014': 4.1
 }
 
 
-""" Hur många fler invånare bor det i Stockholm som tätort jämfört med Göteborg?
-""" 
-# Skriv kod här!
-
-
-""" Hur många procent större är storstadsområdet Stockolm än Göteborg?
+""" Hur många procentenheter har arbetslösheten stigit i Stockholm?
 """
-# Skriv kod här!
+increase=(stockholm ["unemployment_2014"] - stockholm ["unemployment_2009"])
+print ("I Stockholm har de arbetslösa blivit %s procentenheter fler." % increase)
 
 
-""" Hur stor andel av stockholmarna i storstadsområdet bor i tätorten?
+""" Hur många procentenheter har arbetslösheten stigit i Solna?"""
+
+increase2=(solna ["unemployment_2014"] - solna ["unemployment_2009"])
+print ("I Solna har de arbetslösa blivit %s procentenheter fler." % increase2)
+
+
+
+""" Hur mycket högra arbetslöshet hade Stockholm än Solna 2014?
 """
-# Skriv kod här!
-
+increase3=(stockholm ["unemployment_2014"] - solna ["unemployment_2014"])
+print ("I Stockholm har de arbetslösa blivit %s procentenhet fler än i Solna." % increase3)
